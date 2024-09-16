@@ -1,8 +1,30 @@
 #include "../../CircleShape.h"
 
-CircleShape::CircleShape(unsigned int radius) : shape_(radius) {}
+#define _USE_MATH_DEFINES
+#include <math.h>
 
-void CircleShape::draw() const
+CircleShape::CircleShape(unsigned int radius, Point center) : shape_(radius) 
 {
-    // Реализация отрисовки круга
+    posX_ = center.x;
+    posY_ = center.y;
+    shape_.setPosition(posX_, posY_);
+    CalculateArea();
+    CalculatePerimiter();
+}
+
+void CircleShape::draw(sf::RenderWindow& window) const
+{
+    window.draw(shape_);
+}
+
+void CircleShape::CalculatePerimiter()
+{
+    float radius = shape_.getRadius();
+    SetPerimeter(2 * M_PI * radius);
+}
+
+void CircleShape::CalculateArea()
+{
+    float radius = shape_.getRadius();
+    SetArea(radius * radius * M_PI);
 }
