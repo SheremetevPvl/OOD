@@ -133,7 +133,7 @@ std::vector<std::string> Split(const std::string& str, char delimiter)
     return tokens;
 }
 
-std::vector<std::unique_ptr<Shape>>Control:: GetShapesFromFile()
+std::vector<std::unique_ptr<Shape>> Control::GetShapesFromFile()
 {
     std::map<std::string, std::function<std::unique_ptr<Shape>(const std::vector<std::string>&)>> shapesMap = 
     {

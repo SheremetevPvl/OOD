@@ -1,0 +1,481 @@
+﻿  Control.cpp
+C:\Учебные\OOD\lab1\ShapeComp\Control.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(529,37): error C2825: _Alloc: должен представлять класс или пространство имен с последующим "::"
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(529,37):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\Учебные\OOD\lab1\ShapeComp\Control.cpp(19,27):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::vector<int,int>"
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(435,26):
+          выполняется компиляция ссылки на экземпляр псевдоним шаблон функции "std::_Rebind_alloc_t<_Alloc,_Ty>"
+          with
+          [
+              _Alloc=int,
+              _Ty=int
+          ]
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(746,69):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::allocator_traits<_Alloc>"
+          with
+          [
+              _Alloc=int
+          ]
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(723,27):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Normal_allocator_traits<_Alloc>"
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(529,45): error C2510: _Alloc: выражение слева от "::" должно быть классом, структурой или объединением
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(529,45): error C2061: синтаксическая ошибка: идентификатор "value_type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(327,27): error C2825: _Ty: должен представлять класс или пространство имен с последующим "::"
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(327,27):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(531,68):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Get_pointer_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(327,32): error C2510: _Ty: выражение слева от "::" должно быть классом, структурой или объединением
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(327,32): error C2061: синтаксическая ошибка: идентификатор "value_type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(531,68): error C2039: "type": не является членом "std::_Get_pointer_type<_Alloc,void>".
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(531,68): error C2039:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(531,68): error C2039:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(531,68): error C2039:             _Alloc=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(531,68): error C2039:         ]
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(326,8):
+       см. объявление "std::_Get_pointer_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(531,68): error C2061: синтаксическая ошибка: идентификатор "type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(339,53): error C2039: "type": не является членом "std::_Get_pointer_type<_Alloc,void>".
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(339,53): error C2039:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(339,53): error C2039:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(339,53): error C2039:             _Alloc=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(339,53): error C2039:         ]
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(326,8):
+       см. объявление "std::_Get_pointer_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(339,53):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(532,74):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Get_const_pointer_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(339,53): error C2061: синтаксическая ошибка: идентификатор "type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(340,29): error C2825: _Ty: должен представлять класс или пространство имен с последующим "::"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(340,34): error C2510: _Ty: выражение слева от "::" должно быть классом, структурой или объединением
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(340,34): error C2061: синтаксическая ошибка: идентификатор "value_type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(341,44): error C2065: _Ptrty: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(341,29): error C2923: std::pointer_traits: "_Ptrty" не является допустимым аргументом типа шаблон для параметра "_Ty"
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(341,44):
+       см. объявление "_Ptrty"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(341,75): error C2065: _Valty: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(341,69): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(341,75): error C2146: синтаксическая ошибка: отсутствие ">" перед идентификатором "_Valty"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(353,53): error C2039: "type": не является членом "std::_Get_pointer_type<_Alloc,void>".
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(353,53): error C2039:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(353,53): error C2039:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(353,53): error C2039:             _Alloc=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(353,53): error C2039:         ]
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(326,8):
+       см. объявление "std::_Get_pointer_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(353,53):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(533,73):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Get_void_pointer_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(353,53): error C2061: синтаксическая ошибка: идентификатор "type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(354,44): error C2065: _Ptrty: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(354,29): error C2923: std::pointer_traits: "_Ptrty" не является допустимым аргументом типа шаблон для параметра "_Ty"
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(354,44):
+       см. объявление "_Ptrty"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(354,62): error C2903: rebind: символ не является ни классом шаблон, ни функцией шаблон
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(364,53): error C2039: "type": не является членом "std::_Get_pointer_type<_Alloc,void>".
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(364,53): error C2039:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(364,53): error C2039:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(364,53): error C2039:             _Alloc=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(364,53): error C2039:         ]
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(326,8):
+       см. объявление "std::_Get_pointer_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(364,53):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(534,79):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Get_const_void_pointer_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(364,53): error C2061: синтаксическая ошибка: идентификатор "type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(365,44): error C2065: _Ptrty: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(365,29): error C2923: std::pointer_traits: "_Ptrty" не является допустимым аргументом типа шаблон для параметра "_Ty"
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(365,44):
+       см. объявление "_Ptrty"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(365,62): error C2903: rebind: символ не является ни классом шаблон, ни функцией шаблон
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(375,53): error C2039: "type": не является членом "std::_Get_pointer_type<_Alloc,void>".
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(375,53): error C2039:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(375,53): error C2039:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(375,53): error C2039:             _Alloc=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(375,53): error C2039:         ]
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(326,8):
+       см. объявление "std::_Get_pointer_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(375,53):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(536,62):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Get_size_type<_Alloc,void>"
+          with
+          [
+              _Alloc=int
+          ]
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(386,70):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Get_difference_type<_Ty,void>"
+          with
+          [
+              _Ty=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(375,53): error C2061: синтаксическая ошибка: идентификатор "type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(376,44): error C2065: _Ptrty: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(376,29): error C2923: std::pointer_traits: "_Ptrty" не является допустимым аргументом типа шаблон для параметра "_Ty"
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(376,44):
+       см. объявление "_Ptrty"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(376,53): error C2955: "std::pointer_traits": для использования класс шаблон требуется список аргументов шаблон
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xutility(441,8):
+       см. объявление "std::pointer_traits"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(376,53): error C2039: "difference_type": не является членом "std::pointer_traits<_Ty>".
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xutility(441,8):
+       см. объявление "std::pointer_traits<_Ty>"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(376,53): error C2061: синтаксическая ошибка: идентификатор "difference_type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(386,70): error C2039: "type": не является членом "std::_Get_difference_type<_Ty,void>".
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(386,70): error C2039:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(386,70): error C2039:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(386,70): error C2039:             _Ty=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(386,70): error C2039:         ]
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(374,8):
+       см. объявление "std::_Get_difference_type<_Ty,void>"
+          with
+          [
+              _Ty=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(386,70): error C2146: синтаксическая ошибка: отсутствие ">" перед идентификатором "type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(537,68): error C2039: "type": не является членом "std::_Get_difference_type<_Ty,void>".
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(537,68): error C2039:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(537,68): error C2039:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(537,68): error C2039:             _Ty=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(537,68): error C2039:         ]
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(374,8):
+       см. объявление "std::_Get_difference_type<_Ty,void>"
+          with
+          [
+              _Ty=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(537,68): error C2061: синтаксическая ошибка: идентификатор "type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(551,9): error C3646: allocate: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(551,26): error C2065: _Al: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(551,18): error C2275: "_Alloc": ожидается выражение вместо типа
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(551,31): error C2226: синтаксическая ошибка: непредвиденный тип "std::_Normal_allocator_traits<_Alloc>::size_type"
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(551,31): error C2226:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(551,31): error C2226:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(551,31): error C2226:             _Alloc=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(551,31): error C2226:         ]
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(551,74): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(556,9): error C3646: allocate: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(556,26): error C2065: _Al: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(556,18): error C2275: "_Alloc": ожидается выражение вместо типа
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(556,31): error C2226: синтаксическая ошибка: непредвиденный тип "std::_Normal_allocator_traits<_Alloc>::size_type"
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(556,31): error C2226:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(556,31): error C2226:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(556,31): error C2226:             _Alloc=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(556,31): error C2226:         ]
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(556,106): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(575,54): error C2061: синтаксическая ошибка: идентификатор "pointer"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(438,66): error C2027: использование неопределенного типа "std::_Replace_first_parameter<_Other,_Ty>"
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(438,66): error C2027:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(438,66): error C2027:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(438,66): error C2027:             _Other=int,
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(438,66): error C2027:             _Ty=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(438,66): error C2027:         ]
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xutility(356,8):
+       см. объявление "std::_Replace_first_parameter<_Other,_Ty>"
+          with
+          [
+              _Other=int,
+              _Ty=int
+          ]
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(438,66):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(746,69):
+          выполняется компиляция ссылки на экземпляр псевдоним шаблон функции "std::_Normal_allocator_traits<_Alloc>::rebind_alloc<_Ty>"
+          with
+          [
+              _Alloc=int,
+              _Ty=int
+          ]
+          C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(545,69):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Get_rebind_type<_Alloc,_Ty,void>"
+          with
+          [
+              _Alloc=int,
+              _Ty=int
+          ]
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(438,66): error C2061: синтаксическая ошибка: идентификатор "type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(545,69): error C2794: type: не является прямым или косвенным базовым классом для "std::_Get_rebind_type<_Alloc,_Ty,void>"
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(545,69): error C2794:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(545,69): error C2794:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(545,69): error C2794:             _Alloc=int,
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(545,69): error C2794:             _Ty=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(545,69): error C2794:         ]
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(746,69): error C2938: "std::_Normal_allocator_traits<_Alloc>::rebind_alloc": не удалось специализировать шаблон псевдонима
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(746,69): error C2938:         with
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(746,69): error C2938:         [
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(746,69): error C2938:             _Alloc=int
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(746,69): error C2938:         ]
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(435,26): error C2938: "std::_Rebind_alloc_t": не удалось специализировать шаблон псевдонима
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(439,76): error C2825: _Alloc: должен представлять класс или пространство имен с последующим "::"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(439,84): error C2510: _Alloc: выражение слева от "::" должно быть классом, структурой или объединением
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(439,84): error C2146: синтаксическая ошибка: отсутствие ">" перед идентификатором "value_type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(439,52): error C2062: тип "unknown-type" не требуется
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(440,68): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(446,52): error C2955: "std::allocator_traits": для использования класс шаблон требуется список аргументов шаблон
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(723,8):
+       см. объявление "std::allocator_traits"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(446,52): error C2039: "pointer": не является членом "std::allocator_traits<_Alloc>".
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(723,8):
+       см. объявление "std::allocator_traits<_Alloc>"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(446,52): error C2061: синтаксическая ошибка: идентификатор "pointer"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(447,52): error C2955: "std::allocator_traits": для использования класс шаблон требуется список аргументов шаблон
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(723,8):
+       см. объявление "std::allocator_traits"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(447,52): error C2039: "const_pointer": не является членом "std::allocator_traits<_Alloc>".
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(723,8):
+       см. объявление "std::allocator_traits<_Alloc>"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(447,52): error C2061: синтаксическая ошибка: идентификатор "const_pointer"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(450,52): error C2955: "std::allocator_traits": для использования класс шаблон требуется список аргументов шаблон
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(723,8):
+       см. объявление "std::allocator_traits"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(450,52): error C2039: "size_type": не является членом "std::allocator_traits<_Alloc>".
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(723,8):
+       см. объявление "std::allocator_traits<_Alloc>"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(450,52): error C2061: синтаксическая ошибка: идентификатор "size_type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(451,52): error C2955: "std::allocator_traits": для использования класс шаблон требуется список аргументов шаблон
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(723,8):
+       см. объявление "std::allocator_traits"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(451,52): error C2039: "difference_type": не является членом "std::allocator_traits<_Alloc>".
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\xmemory(723,8):
+       см. объявление "std::allocator_traits<_Alloc>"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(451,52): error C2061: синтаксическая ошибка: идентификатор "difference_type"
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,30): error C2065: size_type: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,41): error C2065: difference_type: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,58): error C2065: pointer: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,67): error C2065: const_pointer: необъявленный идентификатор
+  (компиляция исходного файла "Control.cpp")
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,9): error C2923: std::_Vec_iter_types: "size_type" не является допустимым аргументом типа шаблон для параметра "_Size_type"
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,30):
+       см. объявление "size_type"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,9): error C2923: std::_Vec_iter_types: "difference_type" не является допустимым аргументом типа шаблон для параметра "_Difference_type"
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,41):
+       см. объявление "difference_type"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,9): error C2923: std::_Vec_iter_types: "pointer" не является допустимым аргументом типа шаблон для параметра "_Pointer"
+  (компиляция исходного файла "Control.cpp")
+      C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,58):
+       см. объявление "pointer"
+  
+C:\VisualStudio\VC\Tools\MSVC\14.41.34120\include\vector(593,9): error C1003: число ошибок превышает 100; остановка компиляции
+  (компиляция исходного файла "Control.cpp")
+  
+  ConvexShape.cpp
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(3,14): error C2084: функция "ConvexShape::ConvexShape(std::vector<Point,std::allocator<Point>> &)" уже имеет текст реализации
+      C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.h(9,5):
+      см. предыдущее определение "ConvexShape::ConvexShape"
+  
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(5,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,63): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,63): warning C4244:         with
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,63): warning C4244:         [
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,63): warning C4244:             T=float
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,63): warning C4244:         ]
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,50): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,50): warning C4244:         with
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,50): warning C4244:         [
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,50): warning C4244:             T=float
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(8,50): warning C4244:         ]
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(12,50): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(12,37): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Shape.cpp
+C:\Учебные\OOD\lab1\ShapeComp\Shape.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Создание кода...

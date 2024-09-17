@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E301705-7AD6-45F4-8A76-EF367068ABE2}|ShapeComp.vcxproj|C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\Shape.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E301705-7AD6-45F4-8A76-EF367068ABE2}|ShapeComp.vcxproj|solutionrelative:Shape.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E301705-7AD6-45F4-8A76-EF367068ABE2}|ShapeComp.vcxproj|C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\Shape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E301705-7AD6-45F4-8A76-EF367068ABE2}|ShapeComp.vcxproj|solutionrelative:Shape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E301705-7AD6-45F4-8A76-EF367068ABE2}|ShapeComp.vcxproj|C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\CircleShape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2E301705-7AD6-45F4-8A76-EF367068ABE2}|ShapeComp.vcxproj|solutionrelative:CircleShape.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shape.cpp",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\Shape.cpp",
+              "RelativeDocumentMoniker": "Shape.cpp",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\Shape.cpp",
+              "RelativeToolTip": "Shape.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-17T11:54:32.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Shape.h",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\Shape.h",
+              "RelativeDocumentMoniker": "Shape.h",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\Shape.h",
+              "RelativeToolTip": "Shape.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-17T11:54:12.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CircleShape.cpp",
+              "DocumentMoniker": "C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\CircleShape.cpp",
+              "RelativeDocumentMoniker": "CircleShape.cpp",
+              "ToolTip": "C:\\\u0423\u0447\u0435\u0431\u043D\u044B\u0435\\OOD\\lab1\\ShapeComp\\CircleShape.cpp",
+              "RelativeToolTip": "CircleShape.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-17T10:56:45.47Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
