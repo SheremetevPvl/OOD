@@ -1,2 +1,6 @@
-﻿  main.cpp
+﻿  Control.cpp
+D:\OOD\lab1\ShapeComp\Control.cpp(31,26): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+D:\OOD\lab1\ShapeComp\Control.cpp(34,45): warning C4101: e: неиспользованная локальная переменная
+D:\OOD\lab1\ShapeComp\Control.cpp(60,27): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\OOD\lab1\ShapeComp\Control.cpp(62,41): warning C4101: e: неиспользованная локальная переменная
   ShapeComp.vcxproj -> D:\OOD\lab1\ShapeComp\x64\Debug\ShapeComp.exe

@@ -18,7 +18,7 @@ class Control
 public:
 	void LoadFile(const std::string& filename);
 	std::vector<std::unique_ptr<Shape>> GetShapesFromFile();
-	void UnloadToFile(const std::string& filename, std::vector<std::unique_ptr<Shape>> shapes);
+	void UploadToFile(const std::string& filename, std::vector<std::unique_ptr<Shape>>& shapes);
 private:
 	std::ifstream file_;
 };

@@ -3,11 +3,13 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
-CircleShape::CircleShape(unsigned int radius, Point center) : shape_(radius) 
+CircleShape::CircleShape(float radius, Point center) : Shape("CIRCLE")
 {
-    posX_ = center.x;
-    posY_ = center.y;
-    shape_.setPosition(posX_, posY_);
+    position_.x = center.x;
+    position_.y = center.y;
+    shape_.setRadius(radius);
+    shape_.setPosition(position_);
+    shape_.setFillColor(sf::Color::Green);
     CalculateArea();
     CalculatePerimiter();
 }

@@ -1,4 +1,4 @@
-#include "../../Control.h";
+#include "../../Control.h"
 
 const char DELIMITER = ' ';
 const int TRIANGLE_ANGLES_QUAL = 3;
@@ -13,112 +13,96 @@ void Control::LoadFile(const std::string& filename)
     }
 }
 
-Point GetPoint(const std::string& input_string)
+Point GetPoint(const std::string& inputString)
 {
-    Point point = {0, 0};
-    std::vector<int, int> numbers;
-    std::stringstream ss(input_string);
+    Point point = {0.0f, 0.0f};
+    std::vector<float> numbers;
+    std::stringstream string(inputString);
     std::string token;
-    // Игнорируем символы до первого числа
-    while (std::getline(ss, token, '=')) 
-    {
-        if (token.find_first_of("0123456789") != std::string::npos) 
-        {
-            break;
-        }
-    }
-    // Извлекаем числа
-    while (std::getline(ss, token, ',')) 
+    std::getline(string, token, '=');
+    while (std::getline(string, token, ',')) 
     {
         if (!token.empty() && token.back() == ';') //нужно убрать ';' в последнем токене
         {
-            token.pop_back();                 
+            token.pop_back();
         }
-
         try 
         {
-            int number = std::stoi(token);
+            float number = std::stoi(token);
             numbers.push_back(number);
         }
         catch (const std::invalid_argument& e) 
         {
-            // Игнорируем нечисловые токены
+            std::cerr << "Not num at point: " << token << std::endl;
         }
     }
-    if (numbers.size() >= 2)
+    if (numbers.size() == 2)
     {
         point.x = numbers[0];
         point.y = numbers[1];
     }
-    else
-    {
-        std::cout << "point num don`t have 2 values\n";
-    }
     return point;
 }
 
-int GetNum(const std::string& input_string)
+float GetNum(const std::string& inputString)
 {
-    int num(0);
-    std::stringstream ss(input_string);
+    float number(0);
+    std::stringstream string(inputString);
     std::string token;
-    while (std::getline(ss, token, '='))
-    {
-        if (token.find_first_of("0123456789") != std::string::npos)
-        {
-            break;
-        }
-    }
-    std::getline(ss, token, ',');
+    std::getline(string, token, '=');
+    std::getline(string, token);
     if (!token.empty() && token.back() == ';')
     {
         token.pop_back();
     }
     try
     {
-        int number = std::stoi(token);
+        number = std::stoi(token);
     }
     catch (const std::invalid_argument& e)
     {
-        // Игнорируем нечисловые токены
+        std::cerr << "Not num value: " << token << std::endl;
     }
-    return num;
+    return number;
 }
 
-std::unique_ptr<Shape> GetTriangle(std::vector<std::string> line)
+std::unique_ptr<Shape> GetTriangle(std::vector<std::string> params)
 {
     std::vector<Point> points;
     for (int i = 1; i <= TRIANGLE_ANGLES_QUAL; i++)
     {
-        Point point = GetPoint(line[0]);
+        Point point = GetPoint(params[0]);
         points.push_back(point);
-        line.erase(line.begin());
+        if (!params.empty())
+        {
+            params.erase(params.begin());
+        }
     }
-    std::unique_ptr<Shape> triangle = std::make_unique<ConvexShape>(points);
-    return triangle;
+    return std::make_unique<ConvexShape>(points);
 }
 
-std::unique_ptr<Shape> GetRectangle(std::vector<std::string> line)
+std::unique_ptr<Shape> GetRectangle(std::vector<std::string> params)
 {
     std::vector<Point> points;
     for (int i = 1; i <= RECTANGLE_ANGLES_QUAL; i++)
     {
-        Point point = GetPoint(line[0]);
+        Point point = GetPoint(params[0]);
         points.push_back(point);
-        line.erase(line.begin());
+        if (!params.empty())
+        {
+            params.erase(params.begin());
+        }
     }
-    std::unique_ptr<Shape> rectangle = std::make_unique<RectangleShape>(points);
-    return rectangle;
+    return std::make_unique<RectangleShape>(points);
 }
 
-std::unique_ptr<Shape> GetCircle(std::vector<std::string> line)
+std::unique_ptr<Shape> GetCircle(std::vector<std::string> params)
 {
     Point center = { 0, 0 };
-    center = GetPoint(line[0]);
-    line.erase(line.begin());
-    int radius = GetNum(line[0]);
-    std::unique_ptr<Shape> circle = std::make_unique<CircleShape>(radius, center);
-    return circle;
+    center = GetPoint(params[0]);
+    params.erase(params.begin());
+    float radius = GetNum(params[0]);
+    return std::make_unique<CircleShape>(radius, center);
 }
 
 std::vector<std::string> Split(const std::string& str, char delimiter) 
@@ -133,7 +117,7 @@ std::vector<std::string> Split(const std::string& str, char delimiter)
     return tokens;
 }
 
-std::vector<std::unique_ptr<Shape>>Control:: GetShapesFromFile()
+std::vector<std::unique_ptr<Shape>>Control::GetShapesFromFile()
 {
     std::map<std::string, std::function<std::unique_ptr<Shape>(const std::vector<std::string>&)>> shapesMap = 
     {
@@ -153,27 +137,24 @@ std::vector<std::unique_ptr<Shape>>Control:: GetShapesFromFile()
             if (shapesMap.find(shapeName) != shapesMap.end())
             {
                 std::unique_ptr<Shape> shape = shapesMap[shapeName](words);
-                shapes.push_back(shape);
+                shapes.push_back(std::move(shape));
             }
         }
     }
     return shapes;
 }
 
-void Control::UnloadToFile(const std::string& filename, std::vector<std::unique_ptr<Shape>> shapes)
+void Control::UploadToFile(const std::string& filename, std::vector<std::unique_ptr<Shape>>& shapes)
 {
     std::ofstream file(filename);
-    // Проверяем, удалось ли открыть файл
-    if (!file.is_open()) {
+    if (!file.is_open()) 
+    {
         std::cerr << "Error: Could not open file " << filename << std::endl;
         return;
     }
-    // Записываем содержимое вектора в файл
     for (const auto& shape : shapes) 
     {
-        file << "name" << std::endl;
+        file << shape->GetName() << ": " << "P= " << shape->GetPerimiter() << " S= " << shape->GetArea() << "\n";
     }
-
-    // Закрываем файл
     file.close();
 }
