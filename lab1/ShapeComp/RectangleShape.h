@@ -6,7 +6,6 @@
 class RectangleShape : public Shape 
 {
 public:
-    //RectangleShape(sf::Vector2f& bottomLeft, sf::Vector2f& topRight);
     RectangleShape(std::vector<Point> points);
     void draw(sf::RenderWindow& window) const override;
 protected:
@@ -14,8 +13,7 @@ protected:
     void CalculateArea() override;
 private:
     sf::Vector2f CalculateSize();
-    sf::Vector2f bottomLeft_;
-    sf::Vector2f topRight_;
+    sf::Vector2f position_;
+    sf::Vector2f secondPoint_;
     sf::RectangleShape shape_;
-    sf::Vector2f size_ = CalculateSize();
 };

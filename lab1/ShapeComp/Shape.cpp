@@ -10,12 +10,17 @@ float Shape::GetArea() const
 	return area_;
 }
 
+void Shape::SetPerimeter(float value)
+{
+	perimeter_ = value;
+}
+
 void Shape::SetArea(float value)
 {
 	area_ = value;
 }
 
-void Shape::SetPerimeter(float value)
+std::string Shape::GetName()
 {
-	perimeter_ = value;
+	return shapeName;
 }

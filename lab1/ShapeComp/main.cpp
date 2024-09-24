@@ -1,5 +1,8 @@
 #include <SFML/Graphics.hpp>
-#include "../../Shape.h";
+#include "../../Shape.h"
+#include "../../CircleShape.h"
+#include "../../RectangleShape.h"
+#include "../../ConvexShape.h"
 #include "../../Control.h"
 
 const std::string INPUT_FILE_NAME = "Input.txt";
@@ -7,10 +10,10 @@ const std::string OUTPUT_FILE_NAME = "Output.txt";
 
 int main()
 {
-   /* sf::RenderWindow window(sf::VideoMode(1000, 600), "Shape redactor");
     Control controller;
     controller.LoadFile(INPUT_FILE_NAME);
     std::vector<std::unique_ptr<Shape>> shapes = controller.GetShapesFromFile();
+    sf::RenderWindow window(sf::VideoMode(800, 400), "Shape constructor");
     while (window.isOpen())
     {
         sf::Event event;
@@ -20,12 +23,12 @@ int main()
                 window.close();
         }
         window.clear();
-        for (const auto& shape : shapes)
+        for (int i = 0; i < shapes.size(); i++)
         {
-            shape->draw(window);
+            shapes[i]->draw(window);
         }
         window.display();
-    }*/
-    // controller.UnloadToFile(OUTPUT_FILE_NAME, shapes);
+    }
+    controller.UploadToFile(OUTPUT_FILE_NAME, shapes);
     return 0;
 }
