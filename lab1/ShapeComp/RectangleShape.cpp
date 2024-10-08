@@ -1,4 +1,4 @@
-#include "../../RectangleShape.h"
+#include "../ShapeComp/RectangleShape.h"
 #include <iostream>
 
 RectangleShape::RectangleShape(std::vector<Point> points) : Shape("RECTANGLE")
@@ -25,8 +25,6 @@ RectangleShape::RectangleShape(std::vector<Point> points) : Shape("RECTANGLE")
         std::cerr << "Error: " << e.what() << std::endl;
     }
     shape_.setFillColor(sf::Color::Red);
-    CalculateArea();
-    CalculatePerimiter();
 }
 
 sf::Vector2f RectangleShape::CalculateSize()
@@ -40,14 +38,7 @@ void RectangleShape::draw(sf::RenderWindow& window) const
     window.draw(shape_);
 }
 
-void RectangleShape::CalculatePerimiter()
+sf::Vector2f RectangleShape::GetSize() const
 {
-    sf::Vector2f size = shape_.getSize();
-    SetPerimeter(2 * (size.x + size.y));
-}
-
-void RectangleShape::CalculateArea()
-{
-    sf::Vector2f size = shape_.getSize();
-    SetArea(size.x * size.y);
+    return shape_.getSize();
 }

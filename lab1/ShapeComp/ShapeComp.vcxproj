@@ -140,18 +140,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CircleShape.cpp" />
+    <ClCompile Include="CicrleMathDecorator.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="ConvexShape.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RectangleMathDecorator.cpp" />
     <ClCompile Include="RectangleShape.cpp" />
     <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="ShapeDecorator.cpp" />
+    <ClCompile Include="TriangleMathDecorator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CircleShape.h" />
+    <ClInclude Include="CircleMathDecorator.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="ConvexShape.h" />
+    <ClInclude Include="RectangleMathDecorator.h" />
     <ClInclude Include="RectangleShape.h" />
     <ClInclude Include="Shape.h" />
+    <ClInclude Include="ShapeDecorator.h" />
+    <ClInclude Include="TriangleMathDecorator.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input.txt" />

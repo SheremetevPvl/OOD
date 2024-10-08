@@ -1,9 +1,11 @@
 #include <SFML/Graphics.hpp>
-#include "../../Shape.h"
-#include "../../CircleShape.h"
-#include "../../RectangleShape.h"
-#include "../../ConvexShape.h"
-#include "../../Control.h"
+#include "../ShapeComp/Shape.h"
+#include "../ShapeComp/CircleShape.h"
+#include "../ShapeComp/RectangleShape.h"
+#include "../ShapeComp/ConvexShape.h"
+#include "../ShapeComp/Control.h"
+#include "../ShapeComp/ShapeDecorator.h"
+
 
 const std::string INPUT_FILE_NAME = "Input.txt";
 const std::string OUTPUT_FILE_NAME = "Output.txt";
@@ -12,7 +14,7 @@ int main()
 {
     Control controller;
     controller.LoadFile(INPUT_FILE_NAME);
-    std::vector<std::unique_ptr<Shape>> shapes = controller.GetShapesFromFile();
+    std::vector<std::unique_ptr<ShapeDecorator>> shapes = controller.GetShapesFromFile();
     sf::RenderWindow window(sf::VideoMode(800, 400), "Shape constructor");
     while (window.isOpen())
     {

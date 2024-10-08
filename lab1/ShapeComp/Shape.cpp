@@ -1,24 +1,6 @@
-#include "../../Shape.h";
+#include "../ShapeComp/Shape.h";
 
-float Shape::GetPerimiter() const
-{
-	return perimeter_;
-}
-
-float Shape::GetArea() const
-{
-	return area_;
-}
-
-void Shape::SetPerimeter(float value)
-{
-	perimeter_ = value;
-}
-
-void Shape::SetArea(float value)
-{
-	area_ = value;
-}
+Shape::Shape(const std::string& name) : shapeName(name) {}
 
 std::string Shape::GetName()
 {

@@ -1,16 +1,14 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include "../../Shape.h"
+#include "../ShapeComp/Shape.h"
 
 class RectangleShape : public Shape 
 {
 public:
     RectangleShape(std::vector<Point> points);
     void draw(sf::RenderWindow& window) const override;
-protected:
-    void CalculatePerimiter() override;
-    void CalculateArea() override;
+    sf::Vector2f GetSize() const;
 private:
     sf::Vector2f CalculateSize();
     sf::Vector2f position_;

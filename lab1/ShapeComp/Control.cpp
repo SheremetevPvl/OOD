@@ -1,4 +1,4 @@
-#include "../../Control.h"
+#include "../ShapeComp/Control.h"
 
 const char DELIMITER = ' ';
 const int TRIANGLE_ANGLES_QUAL = 3;
@@ -35,6 +35,10 @@ Point GetPoint(const std::string& inputString)
         {
             std::cerr << "Not num at point: " << token << std::endl;
         }
+        catch (const std::out_of_range& e)
+        {
+            std::cerr << "float num overflowed by token " << token << std::endl;
+        }
     }
     if (numbers.size() == 2)
     {
@@ -66,7 +70,7 @@ float GetNum(const std::string& inputString)
     return number;
 }
 
-std::unique_ptr<Shape> GetTriangle(std::vector<std::string> params)
+std::unique_ptr<ShapeDecorator> GetTriangle(std::vector<std::string> params)
 {
     std::vector<Point> points;
     for (int i = 1; i <= TRIANGLE_ANGLES_QUAL; i++)
@@ -78,10 +82,11 @@ std::unique_ptr<Shape> GetTriangle(std::vector<std::string> params)
             params.erase(params.begin());
         }
     }
-    return std::make_unique<ConvexShape>(points);
+    auto triangle = std::make_shared<ConvexShape>(points);
+    return std::make_unique<TriangleMathDecorator>(triangle);
 }
 
-std::unique_ptr<Shape> GetRectangle(std::vector<std::string> params)
+std::unique_ptr<ShapeDecorator> GetRectangle(std::vector<std::string> params)
 {
     std::vector<Point> points;
     for (int i = 1; i <= RECTANGLE_ANGLES_QUAL; i++)
@@ -93,16 +98,18 @@ std::unique_ptr<Shape> GetRectangle(std::vector<std::string> params)
             params.erase(params.begin());
         }
     }
-    return std::make_unique<RectangleShape>(points);
+    auto rectangle = std::make_shared<RectangleShape>(points);
+    return std::make_unique<RectangleMathDecorator>(rectangle);
 }
 
-std::unique_ptr<Shape> GetCircle(std::vector<std::string> params)
+std::unique_ptr<ShapeDecorator> GetCircle(std::vector<std::string> params)
 {
     Point center = { 0, 0 };
     center = GetPoint(params[0]);
     params.erase(params.begin());
     float radius = GetNum(params[0]);
-    return std::make_unique<CircleShape>(radius, center);
+    auto circle = std::make_shared<CircleShape>(radius, center);
+    return std::make_unique<CircleMathDecorator>(circle);
 }
 
 std::vector<std::string> Split(const std::string& str, char delimiter) 
@@ -117,15 +124,15 @@ std::vector<std::string> Split(const std::string& str, char delimiter)
     return tokens;
 }
 
-std::vector<std::unique_ptr<Shape>>Control::GetShapesFromFile()
+std::vector<std::unique_ptr<ShapeDecorator>>Control::GetShapesFromFile()
 {
-    std::map<std::string, std::function<std::unique_ptr<Shape>(const std::vector<std::string>&)>> shapesMap = 
+    std::map<std::string, std::function<std::unique_ptr<ShapeDecorator>(const std::vector<std::string>&)>> shapesMap = 
     {
         {"TRIANGLE:", GetTriangle},
         {"RECTANGLE:", GetRectangle},
         {"CIRCLE:", GetCircle}
     };
-    std::vector<std::unique_ptr<Shape>> shapes;
+    std::vector<std::unique_ptr<ShapeDecorator>> shapes;
     std::string line;
     while (std::getline(file_, line))
     {
@@ -136,7 +143,7 @@ std::vector<std::unique_ptr<Shape>>Control::GetShapesFromFile()
             words.erase(words.begin());
             if (shapesMap.find(shapeName) != shapesMap.end())
             {
-                std::unique_ptr<Shape> shape = shapesMap[shapeName](words);
+                std::unique_ptr<ShapeDecorator> shape = shapesMap[shapeName](words);
                 shapes.push_back(std::move(shape));
             }
         }
@@ -144,7 +151,7 @@ std::vector<std::unique_ptr<Shape>>Control::GetShapesFromFile()
     return shapes;
 }
 
-void Control::UploadToFile(const std::string& filename, std::vector<std::unique_ptr<Shape>>& shapes)
+void Control::UploadToFile(const std::string& filename, std::vector<std::unique_ptr<ShapeDecorator>>& shapes)
 {
     std::ofstream file(filename);
     if (!file.is_open()) 
