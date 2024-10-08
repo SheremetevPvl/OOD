@@ -1,22 +1,2 @@
-﻿  CircleShape.cpp
-  CicrleMathDecorator.cpp
-C:\Учебные\OOD\lab1\ShapeComp\CicrleMathDecorator.cpp(15,27): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Учебные\OOD\lab1\ShapeComp\CicrleMathDecorator.cpp(21,29): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-  Control.cpp
-C:\Учебные\OOD\lab1\ShapeComp\Control.cpp(31,26): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
-C:\Учебные\OOD\lab1\ShapeComp\Control.cpp(34,45): warning C4101: e: неиспользованная локальная переменная
-C:\Учебные\OOD\lab1\ShapeComp\Control.cpp(38,41): warning C4101: e: неиспользованная локальная переменная
-C:\Учебные\OOD\lab1\ShapeComp\Control.cpp(64,27): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-C:\Учебные\OOD\lab1\ShapeComp\Control.cpp(66,41): warning C4101: e: неиспользованная локальная переменная
-  ConvexShape.cpp
-C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(5,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Учебные\OOD\lab1\ShapeComp\ConvexShape.cpp(20,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  main.cpp
-  RectangleMathDecorator.cpp
-  RectangleShape.cpp
-  Shape.cpp
-C:\Учебные\OOD\lab1\ShapeComp\Shape.cpp(1,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-  ShapeDecorator.cpp
-  TriangleMathDecorator.cpp
-  Создание кода...
+﻿  main.cpp
   ShapeComp.vcxproj -> C:\Учебные\OOD\lab1\ShapeComp\x64\Debug\ShapeComp.exe

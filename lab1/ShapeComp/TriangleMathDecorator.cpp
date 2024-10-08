@@ -1,4 +1,7 @@
 #include "../ShapeComp/TriangleMathDecorator.h"
+#include <algorithm>
+
+const float EPSILON = 1e-6; // ѕогрешность дл€ сравнени€ с нулем
 
 TriangleMathDecorator::TriangleMathDecorator(std::shared_ptr<ConvexShape> shape) : ShapeDecorator(shape)
 {
@@ -13,7 +16,12 @@ float CalculateLength(const sf::Vector2f p1, const sf::Vector2f p2)
     return std::sqrt(dx * dx + dy * dy);
 }
 
-//ƒобавить проверку на нахождение на одной пр€мой
+bool isStraight(sf::Vector2f p1, sf::Vector2f p2, sf::Vector2f p3)
+{
+    float det = p1.x * (p2.y - p3.y) + p2.x * (p3.y - p1.y) + p3.x * (p1.y - p2.y);
+    return std::abs(det) < EPSILON;
+}
+
 void TriangleMathDecorator::CalculatePerimiter()
 {
     const sf::Vector2f p1 = std::dynamic_pointer_cast<ConvexShape>(shape)->GetPoint(0);
@@ -22,7 +30,14 @@ void TriangleMathDecorator::CalculatePerimiter()
     float a = CalculateLength(p1, p2);
     float b = CalculateLength(p2, p3);
     float c = CalculateLength(p3, p1);
-    SetPerimeter(a + b + c);
+    if (isStraight(p1, p2, p3))
+    {
+        SetPerimeter(std::max({ a, b, c }));
+    }
+    else
+    {
+        SetPerimeter(a + b + c);
+    }
 }
 
 void TriangleMathDecorator::CalculateArea()
