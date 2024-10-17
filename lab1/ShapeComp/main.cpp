@@ -5,6 +5,7 @@
 #include "../ShapeComp/ConvexShape.h"
 #include "../ShapeComp/Control.h"
 #include "../ShapeComp/ShapeDecorator.h"
+#include "../ShapeComp/ShapeManager.h"
 
 
 const std::string INPUT_FILE_NAME = "Input.txt";
@@ -15,6 +16,8 @@ int main()
     Control controller;
     controller.LoadFile(INPUT_FILE_NAME);
     std::vector<std::unique_ptr<ShapeDecorator>> shapes = controller.GetShapesFromFile();
+    ShapeManager composer;
+    composer.GetShapes(shapes);
     sf::RenderWindow window(sf::VideoMode(800, 400), "Shape constructor");
     while (window.isOpen())
     {
@@ -25,10 +28,11 @@ int main()
                 window.close();
         }
         window.clear();
-        for (int i = 0; i < shapes.size(); i++)
+        /*for (int i = 0; i < shapes.size(); i++)
         {
             shapes[i]->draw(window);
-        }
+        }*/
+        composer.DrawShapes(window);
         window.display();
     }
     controller.UploadToFile(OUTPUT_FILE_NAME, shapes);
